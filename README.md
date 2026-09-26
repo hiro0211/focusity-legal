@@ -11,4 +11,4 @@ hosted via GitHub Pages.
 
 Language preference is remembered in the browser. Static, self-contained, no build step.
 
-Contact: appsupport0326@gmail.com
+Contact: support@defactotech.app
