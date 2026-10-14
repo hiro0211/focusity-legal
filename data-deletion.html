@@ -18,7 +18,7 @@
         <img src="assets/icon.png?v=2" alt="Focusity" />
         <span>
           <span class="name">Focusity</span>
-          <span class="sub"><span class="ja">集中するほど、街が育つ。</span><span class="en">The more you focus, the more your city grows.</span></span>
+          <span class="sub"><span class="ja">集中するほど、建築物が育つ。</span><span class="en">Focus more, grow your buildings.</span></span>
         </span>
       </a>
       <div class="lang-toggle" role="group" aria-label="Language">
@@ -35,8 +35,8 @@
       <span class="accent-bar"></span>
     </h1>
     <p class="meta">
-      <span class="ja">最終更新日：2026年10月13日</span>
-      <span class="en">Last updated: October 13, 2026</span>
+      <span class="ja">最終更新日：2026年10月14日</span>
+      <span class="en">Last updated: October 14, 2026</span>
     </p>
     <p class="lead">
       <span class="ja">このページでは、アプリ「Focusity」（提供者：有村大旭 / Hiroaki Arimura）のデータを削除する方法を説明します。Focusity にはアカウント登録の仕組みがありません。記録や設定はお使いの端末に保存されます。削除の方法は 2 つあります。アプリの中で削除する方法（第 1 項）と、メールで削除を依頼する方法（第 5 項）です。</span>
@@ -112,6 +112,7 @@
         <li><span class="ja"><strong>利用の解析（Google アナリティクス / Firebase）。</strong>削除する前に送った操作の記録は、匿名の ID に付いたまま残ります。保持の期間は Google のポリシーに従います。</span><span class="en"><strong>Usage analytics (Google Analytics / Firebase).</strong> Events sent before deletion remain under the old anonymous ID. Retention follows Google’s policy.</span></li>
         <li><span class="ja"><strong>インストール計測（Meta）。</strong>インストール・起動・Premium の購入（金額と通貨）などの情報です。EEA・英国・スイスでは、同意した方の分だけを送っています。保持の期間は Meta のポリシーに従います。送信は、アプリの「設定 &gt; 広告の効果測定」から止められます（同意を求める地域の場合）。</span><span class="en"><strong>Install attribution (Meta).</strong> Information such as installs, app opens, and Premium purchases (amount and currency). In the EEA, the UK, and Switzerland, we send it only for users who consented. Retention follows Meta’s policy. You can stop sending it from “Settings &gt; Ad measurement” in the App (in regions where we ask for consent).</span></li>
         <li><span class="ja"><strong>AI 生成で Google へ送った内容。</strong>クラフトで入力したテーマと選んだスタイルです。Google は安全のため、限られた期間ログとして保持する場合があります。当方の中継サーバーに置いた依頼と画像は、<!-- CRAFT_RETENTION_JA -->生成の依頼から 3 日（72 時間）で自動で消します<!-- /CRAFT_RETENTION_JA -->。処理の管理に使う Cloudflare Workflows には、テーマ・スタイル・設計書が残ることがあります。残る期間は最長で 30 日ほどです（<a href="privacy.html">プライバシーポリシー</a>第 6 項）。</span><span class="en"><strong>What was sent to Google for AI generation:</strong> the theme you typed and the style you chose in Craft. Google may keep it as logs for a limited period for safety. Requests and images on our relay server are <!-- CRAFT_RETENTION_EN -->deleted automatically 3 days (72 hours) after the generation request<!-- /CRAFT_RETENTION_EN -->. Cloudflare Workflows, which we use to manage the processing, may keep the theme, the style, and a brief (text instructions) for up to about 30 days (<a href="privacy.html">Privacy Policy</a>, Section 6).</span></li>
+        <li><span class="ja"><strong>クラフトの品質の改善のための匿名の記録。</strong>生成が終わったとき、テーマの文字・画風・設計書・完成した画像などを 1 回だけ残します。端末や利用者の ID は付けていません。記録は、作ってから 365 日（1 年）で自動で消えます。端末の ID と結び付かないため、当方は、あなたの分を探して消すことができません（<a href="privacy.html">プライバシーポリシー</a>第 6 項）。</span><span class="en"><strong>Anonymous records for improving Craft quality.</strong> When a generation ends, we keep one record with the theme text, style, brief, finished image, and similar details, without any device or user ID. Records are deleted automatically 365 days (1 year) after they are created. Because they are not linked to your device ID, we cannot find and delete your records (<a href="privacy.html">Privacy Policy</a>, Section 6).</span></li>
         <li><span class="ja"><strong>「みんなで集中」の在室の情報。</strong>集中している間だけ、その集中かぎりの使い捨ての ID と、建築の名前・段・集中した時間などを送ります。最後の通信から 90 秒で一覧から外れ、遅くとも 7 分ほどでサーバーから消えます。</span><span class="en"><strong>“Focus together” presence.</strong> Only while you are focusing, we send a one-time ID used for that session only, plus the building name, stage, and focused time. It drops off the list 90 seconds after your last update and is erased from the server within about 7 minutes.</span></li>
         <li><span class="ja"><strong>アンケートと「建ててほしい建築」の送信。</strong>アプリから送った場合だけ、回答と送った時点の利用状況（集中の回数など）を Cloudflare D1 に保存しています。Google アナリティクスの app instance ID も一緒に保存します。ご依頼をいただくまで保持します（<a href="privacy.html">プライバシーポリシー</a>第 13 項）。</span><span class="en"><strong>In-app surveys and building requests.</strong> Only if you sent them from the App, your answers and your usage at that time (such as the number of focus sessions) are stored in Cloudflare D1, together with your Google Analytics app instance ID. We keep them until you ask us to delete them (<a href="privacy.html">Privacy Policy</a>, Section 13).</span></li>
         <li><span class="ja"><strong>インタビューへの応募。</strong>メールアドレスは、謝礼をお渡ししたあとに削除します（<a href="privacy.html">プライバシーポリシー</a>第 13 項）。</span><span class="en"><strong>Interview sign-ups.</strong> We delete your email address once the thank-you gift has been sent (<a href="privacy.html">Privacy Policy</a>, Section 13).</span></li>
@@ -134,8 +135,8 @@
         <li><span class="ja">アンケートや建築のリクエストの場合は、送ったおおよその日付と書いた内容。インタビューの場合は、応募に使ったメールアドレス。</span><span class="en">For surveys or building requests, the approximate date you sent them and what you wrote. For interviews, the email address you used to sign up.</span></li>
       </ul>
       <p>
-        <span class="ja">ご依頼を受け取ったら、当方が持つデータからあなたの分を探して削除し、結果をメールでお知らせします。解析や購入の記録は匿名の ID だけで管理しているため、いただいた情報からあなたの分を特定できない場合があります。そのときは、その旨をお返事します。ストアの購入履歴は当方では削除できません。</span>
-        <span class="en">When we receive your request, we will look for your data among the data we hold, delete it, and reply by email with the result. Analytics and purchase records are managed only by anonymous IDs, so we may not be able to identify your data from the information you give us; if so, we will tell you. We cannot delete store purchase histories.</span>
+        <span class="ja">ご依頼を受け取ったら、当方が持つデータからあなたの分を探して削除し、結果をメールでお知らせします。解析や購入の記録は匿名の ID だけで管理しているため、いただいた情報からあなたの分を特定できない場合があります。そのときは、その旨をお返事します。クラフトの匿名の記録は端末の ID と結び付かないため、あなたの分を探して消すことはできません。ストアの購入履歴は当方では削除できません。</span>
+        <span class="en">When we receive your request, we will look for your data among the data we hold, delete it, and reply by email with the result. Analytics and purchase records are managed only by anonymous IDs, so we may not be able to identify your data from the information you give us; if so, we will tell you. Anonymous Craft records are not linked to your device ID, so we cannot find and delete your share of them. We cannot delete store purchase histories.</span>
       </p>
     </section>
 

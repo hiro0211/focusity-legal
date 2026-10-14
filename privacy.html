@@ -18,7 +18,7 @@
         <img src="assets/icon.png?v=2" alt="Focusity" />
         <span>
           <span class="name">Focusity</span>
-          <span class="sub"><span class="ja">集中するほど、街が育つ。</span><span class="en">The more you focus, the more your city grows.</span></span>
+          <span class="sub"><span class="ja">集中するほど、建築物が育つ。</span><span class="en">Focus more, grow your buildings.</span></span>
         </span>
       </a>
       <div class="lang-toggle" role="group" aria-label="Language">
@@ -35,8 +35,8 @@
       <span class="accent-bar"></span>
     </h1>
     <p class="meta">
-      <span class="ja">最終更新日：2026年10月13日</span>
-      <span class="en">Last updated: October 13, 2026</span>
+      <span class="ja">最終更新日：2026年10月14日</span>
+      <span class="en">Last updated: October 14, 2026</span>
     </p>
     <p class="lead">
       <span class="ja">本ポリシーは、Focusity（以下「本アプリ」）が情報をどう扱うかを説明するものです。説明するのは、本アプリの提供者である有村大旭（Hiroaki Arimura、以下「当方」）です。本ポリシーは、iPhone・iPad 版と Android 版の両方に適用します。両者で扱いが違う点は、その都度書き分けています。本アプリをご利用いただくことで、本ポリシーに同意いただいたものとみなします。</span>
@@ -197,8 +197,8 @@
     <section class="card highlight">
       <h2><span class="num">6</span><span class="ja">AI 機能とデータの取り扱い</span><span class="en">AI Features &amp; Data Handling</span></h2>
       <p>
-        <span class="ja">「街を作る（クラフト）」機能は、街のジオラマの画像を AI で作ります。使う AI は、<strong>Google の生成 AI「Gemini」</strong>（Gemini API）です。依頼は、当方が運用する中継サーバー（Cloudflare Workers）を通って Google へ届きます。</span>
-        <span class="en">The “Create your city (Craft)” feature uses <strong>Google’s generative AI, Gemini</strong> (Gemini API), to generate images (city dioramas). Requests go to Google through a relay server we operate (Cloudflare Workers).</span>
+        <span class="ja">「建築を作る（クラフト）」機能は、あなたの言葉から建築物の画像を AI で作ります。使う AI は、<strong>Google の生成 AI「Gemini」</strong>（Gemini API）です。依頼は、当方が運用する中継サーバー（Cloudflare Workers）を通って Google へ届きます。</span>
+        <span class="en">The “Build a landmark (Craft)” feature uses <strong>Google’s generative AI, Gemini</strong> (Gemini API), to generate images of a landmark from your own words. Requests go to Google through a relay server we operate (Cloudflare Workers).</span>
       </p>
       <h3><span class="ja">Google へ送る情報</span><span class="en">What is sent to Google</span></h3>
       <ul>
@@ -219,9 +219,26 @@
         <span class="ja">完成した画像は、お使いの端末の中に保存します。</span>
         <span class="en">Finished images are stored on your device.</span>
       </p>
+      <h3><span class="ja">品質の改善のための匿名の記録</span><span class="en">Anonymous records for improving quality</span></h3>
       <p>
-        <span class="ja">AI 機能を初めて使うときは、アプリ内で上の処理への<strong>同意</strong>をお願いしています。同意いただけない場合、AI で街を作る機能は使えません。</span>
-        <span class="en">Before you use the AI feature for the first time, we ask for your in-app <strong>consent</strong> to the processing described above. Without consent, the AI city-generation feature cannot be used.</span>
+        <span class="ja">当方は、クラフトの品質を良くするため、生成の一部を匿名でサーバーに残します。この記録は、上の 3 日で消すデータとは別のものです。当方は、生成が完成・失敗・お断りのどれかで終わったとき、記録を 1 回だけ残します。</span>
+        <span class="en">To improve the quality of Craft, we anonymously keep a record of some generations on our server. This record is separate from the data deleted after 3 days described above. We keep one record when a generation ends, whether it is finished, fails, or is declined.</span>
+      </p>
+      <ul>
+        <li><span class="ja">残すもの：テーマの文字、選んだ画風、設計書（AI が作った建築の説明）、内容の審査の結果、失敗やお断りの理由、使った AI のモデルとプロンプトの版、段ごとにかかった時間とやり直しの回数、完成した最後の段の画像（成功したときだけ）、作った日（日付だけで、時刻は残しません）</span><span class="en">What we keep: the theme text, the style you chose, the brief (the AI-written description of the building), the result of the content review, the reason for a failure or refusal, the AI model and prompt version used, the time each stage took and the number of retries, the image of the final finished stage (only if it succeeded), and the date it was created (the date only, not the time)</span></li>
+        <li><span class="ja">残さないもの：端末や利用者の ID、生成の依頼ごとの ID、IP アドレス、国、途中の段の画像</span><span class="en">What we do not keep: device or user IDs, the ID of each generation request, IP addresses, country, or the images of intermediate stages</span></li>
+      </ul>
+      <p>
+        <span class="ja">当方は、この記録を Cloudflare R2（当方のアカウント）に置きます。記録は、作ってから 365 日（1 年）で自動で消えます。当方は、この記録をクラフトの改善にだけ使います。たとえば、失敗の原因を調べたり、審査やプロンプトを直したりします。当方は、この記録を広告に使いません。第三者に渡したり、売ったり、公開したりもしません。AI モデルの学習（訓練）にも使いません。</span>
+        <span class="en">We store this record in Cloudflare R2 under our own account, and it is deleted automatically 365 days (1 year) after it is created. We use it only to improve Craft, for example to investigate the causes of failures and to adjust the content review and the prompts. We do not use it for advertising, and we do not share, sell, or publish it. We do not use it to train AI models.</span>
+      </p>
+      <p>
+        <span class="ja">この記録には、あなたの端末を表す ID が付いていません。そのため、当方は、特定の方の記録だけを探して消すことができません。テーマの文字は、入力したとおりに残ります。テーマには、名前・住所・電話番号など、個人を特定できる情報を入れないでください。</span>
+        <span class="en">This record carries no ID that identifies your device, so we cannot find and delete the records of a particular person. The theme text is kept exactly as you typed it. Please do not put information that can identify a person, such as a name, address, or phone number, in your theme.</span>
+      </p>
+      <p>
+        <span class="ja">AI 機能を初めて使うときは、アプリ内で上の処理への<strong>同意</strong>をお願いしています。同意いただけない場合、AI で建築を作る機能は使えません。</span>
+        <span class="en">Before you use the AI feature for the first time, we ask for your in-app <strong>consent</strong> to the processing described above. Without consent, the AI landmark-building feature cannot be used.</span>
       </p>
     </section>
 
@@ -279,7 +296,7 @@
         </li>
         <li>
           <strong>Cloudflare</strong> —
-          <span class="ja">当方のサーバーの基盤。クラフトの中継（第 6 項）と「みんなで集中」（第 7 項）に使います。購入の記録の写し（第 5 項）とアンケートなど（第 13 項）の保存にも使います。建築の画像と環境音の配信にも使います。</span><span class="en">Our server infrastructure, used for the Craft relay (Section 6), “Focus together” (Section 7), the copy of purchase records (Section 5), storing surveys and similar submissions (Section 13), and delivering building images and ambient sounds.</span>
+          <span class="ja">当方のサーバーの基盤。クラフトの中継と匿名の記録の保存（第 6 項）と「みんなで集中」（第 7 項）に使います。購入の記録の写し（第 5 項）とアンケートなど（第 13 項）の保存にも使います。建築の画像と環境音の配信にも使います。</span><span class="en">Our server infrastructure, used for the Craft relay and storing anonymous Craft records (Section 6), “Focus together” (Section 7), the copy of purchase records (Section 5), storing surveys and similar submissions (Section 13), and delivering building images and ambient sounds.</span>
           <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a>
         </li>
         <li>
@@ -307,6 +324,7 @@
       </p>
       <ul>
         <li><span class="ja">クラフトの中継サーバーの依頼と画像：第 6 項の期間で自動で消します。</span><span class="en">Craft relay requests and images: deleted automatically within the period stated in Section 6.</span></li>
+        <li><span class="ja">クラフトの品質の改善のための匿名の記録：作ってから 365 日で自動で消します（第 6 項）。</span><span class="en">Anonymous records for improving Craft quality: deleted automatically 365 days after they are created (Section 6).</span></li>
         <li><span class="ja">「みんなで集中」の在室の情報：遅くとも約 7 分で消えます（第 7 項）。</span><span class="en">“Focus together” presence: erased within about 7 minutes (Section 7).</span></li>
         <li><span class="ja">購入の記録の写し：現在、自動で消す期限を設けていません（第 5 項）。</span><span class="en">Copy of purchase records: currently no automatic deletion period (Section 5).</span></li>
         <li><span class="ja">アンケートと建築のリクエスト：削除のご依頼をいただくまで保持します（第 13 項）。</span><span class="en">Surveys and building requests: kept until you ask us to delete them (Section 13).</span></li>
@@ -331,8 +349,8 @@
     <section class="card">
       <h2><span class="num">11</span><span class="ja">あなたの権利</span><span class="en">Your Rights</span></h2>
       <p>
-        <span class="ja">端末の中の記録は、アプリ内の「データを削除」か、本アプリの削除で消せます。広告の効果測定とトラッキングの許可は、第 3 項の方法でいつでも変えられます。当方のサーバーにある情報の開示や削除をご希望の場合は、下記の連絡先までお知らせください。削除の手順は「<a href="data-deletion.html">データの削除</a>」のページにまとめています。</span>
-        <span class="en">You can erase the records on your device with “Delete my data” in the App or by deleting the App. You can change ad measurement and tracking permission at any time as described in Section 3. To request access to or deletion of information on our servers, contact us at the address below. Deletion steps are on the <a href="data-deletion.html">Data Deletion</a> page.</span>
+        <span class="ja">端末の中の記録は、アプリ内の「データを削除」か、本アプリの削除で消せます。広告の効果測定とトラッキングの許可は、第 3 項の方法でいつでも変えられます。当方のサーバーにある情報の開示や削除をご希望の場合は、下記の連絡先までお知らせください。ただし、クラフトの匿名の記録は、あなたの分を探して消すことができません（第 6 項）。削除の手順は「<a href="data-deletion.html">データの削除</a>」のページにまとめています。</span>
+        <span class="en">You can erase the records on your device with “Delete my data” in the App or by deleting the App. You can change ad measurement and tracking permission at any time as described in Section 3. To request access to or deletion of information on our servers, contact us at the address below. However, we cannot find and delete your share of the anonymous Craft records (Section 6). Deletion steps are on the <a href="data-deletion.html">Data Deletion</a> page.</span>
       </p>
     </section>
 
