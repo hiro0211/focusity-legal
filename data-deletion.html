@@ -35,8 +35,8 @@
       <span class="accent-bar"></span>
     </h1>
     <p class="meta">
-      <span class="ja">最終更新日：2026年10月14日</span>
-      <span class="en">Last updated: October 14, 2026</span>
+      <span class="ja">最終更新日：2026年11月5日</span>
+      <span class="en">Last updated: November 5, 2026</span>
     </p>
     <p class="lead">
       <span class="ja">このページでは、アプリ「Focusity」（提供者：有村大旭 / Hiroaki Arimura）のデータを削除する方法を説明します。Focusity にはアカウント登録の仕組みがありません。記録や設定はお使いの端末に保存されます。削除の方法は 2 つあります。アプリの中で削除する方法（第 1 項）と、メールで削除を依頼する方法（第 5 項）です。</span>
@@ -103,8 +103,8 @@
     <section class="card" id="kept-elsewhere">
       <h2><span class="num">4</span><span class="ja">端末の外に残るものと、その期間</span><span class="en">Data kept outside your device, and for how long</span></h2>
       <p>
-        <span class="ja">アプリ内の削除では、端末の外にあるデータは消えません。次のものが残ります。どれも氏名やメールアドレスとは結び付けていません（インタビューへの応募を除く）。</span>
-        <span class="en">The in-app deletion does not remove data held outside your device. The following remains. None of it is linked to your name or email address (except interview sign-ups).</span>
+        <span class="ja">アプリ内の削除では、端末の外にあるデータは消えません。次のものが残ります。どれも氏名やメールアドレスとは結び付けていません（インタビューへの応募と、データの引き継ぎのアカウントを除く）。</span>
+        <span class="en">The in-app deletion does not remove data held outside your device. The following remains. None of it is linked to your name or email address (except interview sign-ups and accounts for data transfer).</span>
       </p>
       <ul>
         <li><span class="ja"><strong>ストアの購入履歴。</strong>Google Play と App Store が持っています。当方やアプリからは消せません。サブスクリプションの解約は、Google Play の「お支払いと定期購入」、または iPhone の「設定 &gt; Apple アカウント &gt; サブスクリプション」で行ってください。</span><span class="en"><strong>Store purchase history.</strong> Held by Google Play and the App Store; neither we nor the App can delete it. Cancel a subscription in Google Play under “Payments &amp; subscriptions”, or on iPhone under “Settings &gt; Apple Account &gt; Subscriptions”.</span></li>
@@ -115,6 +115,7 @@
         <li><span class="ja"><strong>クラフトの品質の改善のための匿名の記録。</strong>生成が終わったとき、テーマの文字・画風・設計書・完成した画像などを 1 回だけ残します。端末や利用者の ID は付けていません。記録は、作ってから 365 日（1 年）で自動で消えます。端末の ID と結び付かないため、当方は、あなたの分を探して消すことができません（<a href="privacy.html">プライバシーポリシー</a>第 6 項）。</span><span class="en"><strong>Anonymous records for improving Craft quality.</strong> When a generation ends, we keep one record with the theme text, style, brief, finished image, and similar details, without any device or user ID. Records are deleted automatically 365 days (1 year) after they are created. Because they are not linked to your device ID, we cannot find and delete your records (<a href="privacy.html">Privacy Policy</a>, Section 6).</span></li>
         <li><span class="ja"><strong>「みんなで集中」の在室の情報。</strong>集中している間だけ、その集中かぎりの使い捨ての ID と、建築の名前・段・集中した時間などを送ります。最後の通信から 90 秒で一覧から外れ、遅くとも 7 分ほどでサーバーから消えます。</span><span class="en"><strong>“Focus together” presence.</strong> Only while you are focusing, we send a one-time ID used for that session only, plus the building name, stage, and focused time. It drops off the list 90 seconds after your last update and is erased from the server within about 7 minutes.</span></li>
         <li><span class="ja"><strong>アンケートと「建ててほしい建築」の送信。</strong>アプリから送った場合だけ、回答と送った時点の利用状況（集中の回数など）を Cloudflare D1 に保存しています。Google アナリティクスの app instance ID も一緒に保存します。ご依頼をいただくまで保持します（<a href="privacy.html">プライバシーポリシー</a>第 13 項）。</span><span class="en"><strong>In-app surveys and building requests.</strong> Only if you sent them from the App, your answers and your usage at that time (such as the number of focus sessions) are stored in Cloudflare D1, together with your Google Analytics app instance ID. We keep them until you ask us to delete them (<a href="privacy.html">Privacy Policy</a>, Section 13).</span></li>
+        <li><span class="ja"><strong>データの引き継ぎ（iPhone・iPad 版でログインした方）。</strong>集中の記録・設定・クラフトの画像を Cloudflare D1 と R2 に保存しています。ログインのアカウントは Firebase Authentication にあります。アプリ内の「データを削除」では消えません。アプリの「データの引き継ぎ」にある「アカウントを削除」で、サーバーのデータと Firebase のアカウントを消せます。Apple でログインしていた場合は、Apple のトークンも無効にします（<a href="privacy.html">プライバシーポリシー</a>第 14 項）。</span><span class="en"><strong>Data transfer (if you signed in on iPhone or iPad).</strong> Your focus records, settings, and Craft images are stored in Cloudflare D1 and R2, and your sign-in account is in Firebase Authentication. “Delete my data” in the App does not remove them. Use “Delete Account” in “Transfer Data” in the App to erase the data on our servers and your Firebase account. If you signed in with Apple, we also revoke your Apple token (<a href="privacy.html">Privacy Policy</a>, Section 14).</span></li>
         <li><span class="ja"><strong>インタビューへの応募。</strong>メールアドレスは、謝礼をお渡ししたあとに削除します（<a href="privacy.html">プライバシーポリシー</a>第 13 項）。</span><span class="en"><strong>Interview sign-ups.</strong> We delete your email address once the thank-you gift has been sent (<a href="privacy.html">Privacy Policy</a>, Section 13).</span></li>
       </ul>
     </section>
