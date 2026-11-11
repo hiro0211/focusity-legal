@@ -35,8 +35,8 @@
       <span class="accent-bar"></span>
     </h1>
     <p class="meta">
-      <span class="ja">最終更新日：2026年11月10日</span>
-      <span class="en">Last updated: November 10, 2026</span>
+      <span class="ja">最終更新日：2026年11月11日</span>
+      <span class="en">Last updated: November 11, 2026</span>
     </p>
     <p class="lead">
       <span class="ja">本ポリシーは、Focusity（以下「本アプリ」）が情報をどう扱うかを説明するものです。説明するのは、本アプリの提供者である有村大旭（Hiroaki Arimura、以下「当方」）です。本ポリシーは、iPhone・iPad 版と Android 版の両方に適用します。両者で扱いが違う点は、その都度書き分けています。本アプリをご利用いただくことで、本ポリシーに同意いただいたものとみなします。</span>
@@ -81,8 +81,8 @@
       </ul>
       <h3><span class="ja">端末に保存するもの</span><span class="en">What is stored on your device</span></h3>
       <p>
-        <span class="ja">集中の記録・建てた建築・クラフトの作品・設定は、お使いの端末に保存します。当方は、これらを丸ごとサーバーへ同期したりバックアップしたりしません。</span>
-        <span class="en">Your focus records, the buildings you build, your Craft works, and your settings are stored on your device. We do not sync or back them up to our servers.</span>
+        <span class="ja">集中の記録・建てた建築・クラフトの作品・設定は、お使いの端末に保存します。当方は、ふだんはこれらをサーバーへ送りません。設定の「データの引き継ぎ」でログインした方の分だけ、引き継ぎのためにサーバーへ保存します（第 14 項）。</span>
+        <span class="en">Your focus records, the buildings you build, your Craft works, and your settings are stored on your device. We normally do not send them to our servers. Only if you sign in from “Transfer Data” in Settings do we store them on our servers for the transfer (Section 14).</span>
       </p>
       <p>
         <span class="ja">ただし、次の機能を使ったときは、その一部をサーバーへ送ります。送るのは、それぞれの項に書いたものだけです。</span>
@@ -92,6 +92,8 @@
         <li><span class="ja">クラフトで作品を作ったとき（第 6 項）</span><span class="en">When you create a work in Craft (Section 6)</span></li>
         <li><span class="ja">「みんなで集中」で集中しているとき（第 7 項）</span><span class="en">While you focus with “Focus together” (Section 7)</span></li>
         <li><span class="ja">アンケート・建築のリクエスト・インタビューへの応募を送ったとき（第 13 項）</span><span class="en">When you send a survey, a building request, or an interview sign-up (Section 13)</span></li>
+        <li><span class="ja">アプリ内のお問い合わせを送ったとき（第 13 項）</span><span class="en">When you send a message with the in-app contact form (Section 13)</span></li>
+        <li><span class="ja">データの引き継ぎでログインしているとき（第 14 項）</span><span class="en">While you are signed in for data transfer (Section 14)</span></li>
       </ul>
       <p>
         <span class="ja">iCloud や Google のバックアップを使っている場合、本アプリのデータもその中に入ることがあります。そのバックアップは Apple か Google のアカウントで管理されます。当方は中身を見られません。</span>
@@ -174,6 +176,10 @@
         <span class="ja">オンボーディングの任意のアンケートでは、<strong>年齢層・性別・本アプリを知ったきっかけ</strong>をお尋ねします。当方は、利用者の層を知るために、この回答を解析に使うことがあります。回答は任意で、回答だけであなたが誰かは分かりません。</span>
         <span class="en">We may also use your <strong>age range, gender, and how you found the App</strong>, collected in an optional onboarding survey, to understand who uses the App. Answering is optional, and the answers alone do not identify you.</span>
       </p>
+      <p>
+        <span class="ja">当方は、アプリが落ちたときの原因を調べるために、Google の <strong>Firebase Crashlytics</strong> を使います。送るのは、落ちた箇所の記録、機種、OS のバージョン、アプリのバージョンなどの診断の情報です。当方は、この記録に解析の匿名の ID やログインのユーザー ID を付けません。</span>
+        <span class="en">To find the cause of crashes, we use Google’s <strong>Firebase Crashlytics</strong>. It receives diagnostic information such as where the crash happened, the device model, the OS version, and the App version. We do not attach the anonymous analytics ID or your sign-in user ID to these reports.</span>
+      </p>
     </section>
 
     <!-- 5. 購入・サブスクリプション -->
@@ -184,8 +190,8 @@
         <span class="en">The App sells Premium (monthly, yearly, and one-time) and craft tickets. Payments are processed by the <strong>Apple App Store</strong> on iPhone and iPad, and by <strong>Google Play (Google Play Billing)</strong> on Android. We never receive your card number or other payment details.</span>
       </p>
       <p>
-        <span class="ja">当方は、購入と復元の状態を <strong>RevenueCat</strong> で管理しています。RevenueCat では、氏名などと結び付かない匿名の ID を使います。この匿名の ID には、Google アナリティクスの app instance ID も添えています。購入と解析を突き合わせるためです。</span>
-        <span class="en">We manage purchase and restore status with <strong>RevenueCat</strong>, using an anonymous ID that is not linked to your name. To match purchases with analytics, we also attach your Google Analytics app instance ID to this anonymous ID.</span>
+        <span class="ja">当方は、購入と復元の状態を <strong>RevenueCat</strong> で管理しています。RevenueCat では、ふだんは氏名などと結び付かない匿名の ID を使います。データの引き継ぎでログインした方は、購入を新しい端末へ移すために、ログインのユーザー ID を RevenueCat へ渡します（第 14 項）。メールアドレスは渡しません。当方は、この ID に Google アナリティクスの app instance ID も添えています。購入と解析を突き合わせるためです。</span>
+        <span class="en">We manage purchase and restore status with <strong>RevenueCat</strong>. With RevenueCat we normally use an anonymous ID that is not linked to your name. If you sign in to transfer your data, we pass your sign-in user ID to RevenueCat so your purchases can move to the new device (Section 14). We do not pass your email address. To match purchases with analytics, we also attach your Google Analytics app instance ID to this ID.</span>
       </p>
       <p>
         <span class="ja">購入・更新・解約などが起きると、RevenueCat は記録の写しを当方へ送ります。当方は写しを Cloudflare D1 に保存します。写しに入るのは、匿名の ID、app instance ID、商品、日時、金額と通貨、ストアの種類などです。当方は、購入の数や解約の時期を数えるためにこれを使います。この写しには、現在、自動で消す期限を設けていません。</span>
@@ -274,8 +280,13 @@
           <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>
         </li>
         <li>
-          <strong>Google (Firebase Authentication)</strong> —
-          <span class="ja">データの引き継ぎのためのログイン（Apple・Google）の認証（第 14 項）。ログインした方だけが対象です。</span><span class="en">Authentication for signing in (Apple or Google) to transfer your data (Section 14). Applies only if you sign in.</span>
+          <strong>Google (Firebase Crashlytics)</strong> —
+          <span class="ja">アプリが落ちたときの記録と診断の情報（第 4 項）。</span><span class="en">Crash reports and diagnostic information (Section 4).</span>
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>
+        </li>
+        <li>
+          <strong>Google (Firebase Authentication / Google Sign-In)</strong> —
+          <span class="ja">データの引き継ぎのためのログイン（Sign in with Apple・Google ログイン）の認証（第 14 項）。ログインした方だけが対象です。</span><span class="en">Authentication for signing in (Sign in with Apple or Google Sign-In) to transfer your data (Section 14). Applies only if you sign in.</span>
           <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>
         </li>
         <li>
@@ -291,7 +302,7 @@
         </li>
         <li>
           <strong>Apple</strong> —
-          <span class="ja">iPhone・iPad 版の配信と、App Store による決済。スクリーンタイム（Family Controls）による、端末の中でのアプリの制限。</span><span class="en">Distribution of the iPhone/iPad version, payments through the App Store, and on-device app blocking through Screen Time (Family Controls).</span>
+          <span class="ja">iPhone・iPad 版の配信と、App Store による決済。スクリーンタイム（Family Controls）による、端末の中でのアプリの制限。データの引き継ぎのための Sign in with Apple（第 14 項）。</span><span class="en">Distribution of the iPhone/iPad version, payments through the App Store, on-device app blocking through Screen Time (Family Controls), and Sign in with Apple for data transfer (Section 14).</span>
           <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>
         </li>
         <li>
@@ -306,7 +317,7 @@
         </li>
         <li>
           <strong>Resend</strong> —
-          <span class="ja">建築のリクエストが届いたことを、当方へメールで知らせるため（第 13 項）。</span><span class="en">Emailing us when a building request arrives (Section 13).</span>
+          <span class="ja">建築のリクエストとアプリ内のお問い合わせが届いたことを、当方へメールで知らせるため（第 13 項）。</span><span class="en">Emailing us when a building request or an in-app contact message arrives (Section 13).</span>
           <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">Resend Privacy Policy</a>
         </li>
       </ul>
@@ -333,6 +344,7 @@
         <li><span class="ja">「みんなで集中」の在室の情報：遅くとも約 7 分で消えます（第 7 項）。</span><span class="en">“Focus together” presence: erased within about 7 minutes (Section 7).</span></li>
         <li><span class="ja">購入の記録の写し：現在、自動で消す期限を設けていません（第 5 項）。</span><span class="en">Copy of purchase records: currently no automatic deletion period (Section 5).</span></li>
         <li><span class="ja">アンケートと建築のリクエスト：削除のご依頼をいただくまで保持します（第 13 項）。</span><span class="en">Surveys and building requests: kept until you ask us to delete them (Section 13).</span></li>
+        <li><span class="ja">アプリ内のお問い合わせ：削除のご依頼をいただくまで保持します（第 13 項）。</span><span class="en">In-app contact messages: kept until you ask us to delete them (Section 13).</span></li>
         <li><span class="ja">インタビューへの応募のメールアドレス：謝礼をお渡ししたあとに削除します（第 13 項）。</span><span class="en">Interview sign-up email addresses: deleted after the thank-you gift is sent (Section 13).</span></li>
         <li><span class="ja">データの引き継ぎのために保存した記録と画像：アプリの「アカウントを削除」で消すまで保持します（第 14 項）。</span><span class="en">Records and images saved for data transfer: kept until you delete them with “Delete Account” in the App (Section 14).</span></li>
       </ul>
@@ -374,8 +386,8 @@
     <section class="card highlight">
       <h2><span class="num">13</span><span class="ja">ご自身で送信いただく情報</span><span class="en">Information You Send Us</span></h2>
       <p>
-        <span class="ja">次の 3 つは、あなたがアプリから送った場合だけお預かりします。<strong>どれも任意で、送らなければ何もお預かりしません。</strong>保存先は Cloudflare D1（英国・米国などのデータセンター）です。当方は、これらを広告のサービスへ渡しません。第三者へ販売することもありません。</span>
-        <span class="en">We receive the following three only if you send them from the App. <strong>All are optional; if you do not send them, we receive nothing.</strong> They are stored in Cloudflare D1 (data centers in the UK, the US, and elsewhere). We do not pass them to advertising services, and we do not sell them.</span>
+        <span class="ja">次の 4 つは、あなたがアプリから送った場合だけお預かりします。<strong>どれも任意で、送らなければ何もお預かりしません。</strong>保存先は Cloudflare D1（英国・米国などのデータセンター）です。当方は、これらを広告のサービスへ渡しません。第三者へ販売することもありません。</span>
+        <span class="en">We receive the following four only if you send them from the App. <strong>All are optional; if you do not send them, we receive nothing.</strong> They are stored in Cloudflare D1 (data centers in the UK, the US, and elsewhere). We do not pass them to advertising services, and we do not sell them.</span>
       </p>
 
       <h3><span class="ja">アンケート</span><span class="en">In-app surveys</span></h3>
@@ -408,6 +420,22 @@
       <p>
         <span class="ja">アンケートとリクエストは、削除のご依頼をいただくまで保持します。</span>
         <span class="en">We keep surveys and building requests until you ask us to delete them.</span>
+      </p>
+
+      <h3><span class="ja">アプリ内のお問い合わせ</span><span class="en">In-app contact form</span></h3>
+      <p>
+        <span class="ja">設定の「お問い合わせ」から送っていただくと、次のものを保存します。届いたことは、当方へのメール（Resend 経由）でも知らせます。そのメールにも、次のものが載ります。</span>
+        <span class="en">If you send a message from “Contact Us” in Settings, we store the following. We are also notified by an email (sent through Resend), which includes the same information.</span>
+      </p>
+      <ul>
+        <li><span class="ja">お問い合わせの種類、起きる頻度、本文</span><span class="en">The category, how often it happens, and your message</span></li>
+        <li><span class="ja">メールアドレス（書いた場合だけ。返信に使います）</span><span class="en">Your email address (only if you enter it; used to reply)</span></li>
+        <li><span class="ja">アプリと OS のバージョン、機種、言語、国（アンケートと同じ扱い）、Premium かどうか、インストールした日</span><span class="en">App and OS version, device model, language, country (handled the same way as surveys), whether you are Premium, and the install date</span></li>
+        <li><span class="ja">Google アナリティクスの app instance ID</span><span class="en">Your Google Analytics app instance ID</span></li>
+      </ul>
+      <p>
+        <span class="ja">当方は、これらをお問い合わせへの返信と、不具合の調査だけに使います。Google アナリティクスへは送りません。削除のご依頼をいただくまで保持します。</span>
+        <span class="en">We use this only to reply to you and to investigate problems. It is never sent to Google Analytics. We keep it until you ask us to delete it.</span>
       </p>
 
       <h3><span class="ja">ユーザーインタビューへの応募</span><span class="en">User interview sign-ups</span></h3>
